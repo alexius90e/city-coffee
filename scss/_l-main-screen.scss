@@ -1,0 +1,141 @@
+.main-screen {
+  min-height: 100dvh;
+  padding: 127px 0 175px;
+  box-sizing: border-box;
+  background: url(../assets/main-screen-bg.jpg) center / cover no-repeat;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 395px;
+    min-height: calc(100dvh - 302px);
+    padding: 0 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-link {
+      display: inline-block;
+      width: fit-content;
+
+      &-image {
+        display: block;
+        max-width: 100%;
+        width: 286px;
+        height: auto;
+      }
+    }
+  }
+
+  &__info {
+    padding: 30px 0 35px;
+    margin: 35px 0;
+    border-top: 2px solid #e25726;
+    border-bottom: 2px solid #e25726;
+
+    &-title {
+      font-family: 'Bahnschrift', sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      text-align: center;
+      color: #ffffff;
+
+      & strong {
+        display: inline-block;
+        margin: -6px 0 0;
+        font-family: 'Bahnschrift', sans-serif;
+        font-weight: 400;
+        font-size: 48px;
+        letter-spacing: -0.03em;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+
+    &-social {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      margin: 0 0 36px;
+
+      &-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 170px;
+        width: 100%;
+        aspect-ratio: 170 / 54;
+        overflow: hidden;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        background-color: #ffffff;
+        transition-property: transform;
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.2s;
+        will-change: transform;
+        cursor: pointer;
+
+        &:hover {
+          transform: scale(1.04);
+        }
+
+        &-image {
+          display: block;
+          max-width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    &-description {
+      font-family: 'Bahnschrift', sans-serif;
+      font-weight: 400;
+      font-size: 24px;
+      letter-spacing: -0.01em;
+      text-align: center;
+      color: #ffffff;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    &-link {
+      display: inline-block;
+      max-width: 264px;
+      width: 100%;
+      padding: 7px 6px;
+      box-sizing: border-box;
+      font-family: 'Bahnschrift', sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      letter-spacing: -0.01em;
+      text-align: center;
+      color: #000000;
+      border: 1px solid #000000;
+      border-radius: 5px;
+      background-color: #ffffff;
+      transition-property: background-color, color, border-color;
+      transition-timing-function: ease-in-out;
+      transition-duration: 0.2s;
+      will-change: background-color, color, border-color;
+      cursor: pointer;
+
+      &:hover {
+        color: #ffffff;
+        border-color: #e25726;
+        background-color: #e25726;
+      }
+    }
+  }
+}
